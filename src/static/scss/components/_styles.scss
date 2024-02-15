@@ -1,0 +1,183 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 14px;
+  line-height: 21px;
+  color: $default;
+  font-family: $Montserrat;
+  background-color: $white;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-x: hidden;
+}
+.container{
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  @media screen and (max-width: 360px){
+    max-width: 100%;
+  }
+  @media screen and (max-width: 834px){
+    max-width: 100%;
+  }
+  @media screen and (max-width: 1226px){
+    max-width: 1196px;
+    width: 100%;
+  }
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+  font-family: $Montserrat;
+  font-weight: 600;
+}
+h1, .h1 {
+  font-size: 64px;
+  line-height: 120%;
+  color: $primary;
+}
+
+h2, .h2 {
+  font-size: 42px;
+  line-height: 116%;
+  color: $primary;
+  font-weight: 600;
+  @media screen  and (max-width: 834px){
+    font-size: 32px;
+  }
+  @media screen  and (max-width: 567px){
+    font-size: 24px;
+    line-height: 100%;
+  }
+}
+.title-section{
+  h2{
+    text-transform: uppercase;
+  }
+}
+h3, .h3 {
+  font-size: 18px;
+  line-height: 26px;
+  color: $primary;
+}
+
+h4, .h4 {
+  font-size: 16px;
+  line-height: 28px;
+  color: $primary;
+}
+
+h5, .h5 {
+  font-size: 16px;
+  line-height: 26px;
+  color: $primary;
+}
+
+h6, .h6 {
+  font-size: 14px;
+  line-height: 21px;
+  color: $primary;
+}
+
+p {
+  font-size: 14px;
+  line-height: 23px;
+}
+
+img {
+  display: block;
+  //width: 100%;
+  font-size: 12px;
+  line-height: 14px;
+}
+a{
+  img {
+    width: auto;
+    height: auto;
+  }
+}
+
+section {
+  position: relative;
+  padding: 40px 0;
+}
+.overflow {
+  overflow: hidden !important;
+}
+.hidden {
+  display: none !important;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+a,
+button,
+input,
+select,
+textarea,
+span,
+.icon {
+  transition: all 150ms ease;
+}
+button{
+  cursor: pointer;
+}
+.btn{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 116%;
+  border: 2px solid transparent;
+  transition: all 250ms ease;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 14px;
+  text-align:  center;
+  width: 243px;
+  @media screen  and (max-width: 992px){
+    width: 100%;
+    padding: 16px;
+    max-width: 320px;
+  }
+}
+.btn-primary{
+  background: $white;
+  color: $black;
+  border-color: $white;
+  &:hover{
+    background: transparent;
+    color: $white;
+  }
+}
+.btn-secondary{
+  background: transparent;
+  color: $white;
+  border-color: $white;
+  &:hover{
+    background: $white;
+    color: $black;
+  }
+}
+.btn-line{
+  background: transparent;
+  color: $primary;
+  border-color: $primary;
+  &:hover{
+    background: $primary;
+    color: $white;
+  }
+}
+.page-wrapper{
+  position: relative;
+  font-family: $Montserrat;
+  ul{
+    li{
+      a{
+        img{
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+  }
+}

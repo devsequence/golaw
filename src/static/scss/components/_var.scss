@@ -1,0 +1,41 @@
+// general
+
+$white: #ffffff;
+$black: #000000;
+
+// main
+
+$primary: #122E5A;
+$primary-100: #4A6A9C;
+$primary-200: #437AD0;
+$primary-300: #9CD4FF;
+$secondary: #B4B4B4;
+$secondary-100: #D9D9D9;
+$default: #0E2364;
+$default-100: #0C2245;
+
+$gray: #EEF1F4;
+$gray-100: #F6F6F6;
+$yellow: #ffc107;
+$light: #F3F3F3;
+$red: #DE3F53;
+
+// info
+
+$danger: #FE0000;
+$success: #1FA956;
+$info: #26badf;
+$warning: #fbf8db;
+
+// shades
+
+
+
+
+// mixins
+
+@mixin linear-gradient($direction, $fromColor, $toColor) {
+  background-color: $fromColor;
+  background-image: linear-gradient($direction, $fromColor, $toColor);
+}
+
